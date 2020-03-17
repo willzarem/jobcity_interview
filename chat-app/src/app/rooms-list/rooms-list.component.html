@@ -1,0 +1,10 @@
+<div class="container">
+  <mat-card class="room-card" *ngFor="let room of rooms | async">
+    <mat-card-header>
+      <mat-card-title>{{room.topic}}</mat-card-title>
+      <button mat-button [routerLink]="'room/' + room.id">Enter room</button>
+    </mat-card-header>
+  </mat-card>
+
+  <button mat-fab (click)="addRoom()" style="position: absolute; bottom: 10px; right: 10px;"></button>
+</div>

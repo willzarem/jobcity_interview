@@ -1,0 +1,20 @@
+<div class="container">
+  <div #chat class="messages">
+    <mat-list>
+      <mat-list-item *ngFor="let message of messages | async" class="message"
+                     [class.ownMessage]="userId == message.userId">
+        <p>{{message.body}}</p>
+        <span>{{message.createdAt | date: 'dd/mm HH:mm a'}}</span>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</div>
+<form class="room-form" name="messageForm" (ngSubmit)="sendMessage()"
+      style="width: 100%; background-color: cornflowerblue">
+  <mat-form-field class="room-full-width" style="width: 90%; padding: 20px;">
+    <mat-label>Message</mat-label>
+    <input matInput placeholder="Your message" name="messageBody" [(ngModel)]="messageModel"/>
+  </mat-form-field>
+
+  <button mat-button type="submit" (click)="sendMessage()">Send</button>
+</form>
