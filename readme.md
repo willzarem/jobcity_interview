@@ -1,7 +1,7 @@
 # Jobcity aplication 
 
 ## 0. Planning
-![my board](https://imgur.com/Y4SZFOM)
+![my board](https://i.imgur.com/Y4SZFOMl.jpg)
 This is what the structure was suposed to be like.
 
 ## 1. Structure
