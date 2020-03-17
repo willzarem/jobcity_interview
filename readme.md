@@ -1,5 +1,9 @@
 # Jobcity aplication 
 
+## 0. Planning
+![my board](https://imgur.com/Y4SZFOM)
+This is what the structure was suposed to be like.
+
 ## 1. Structure
 ### chat_server
 This is a nodejs + express server that has a couple of RESTful services that provides access to the mongodb as well as the redis queue. This also connects a client through socket.io to make the realtime chat work
